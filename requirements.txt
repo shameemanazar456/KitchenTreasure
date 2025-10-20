@@ -1,7 +1,15 @@
 scikit-learn
 fastapi
 uvicorn[standard]
-python-multipart      # Required for UploadFile / Form
-pandas                # If your route_logic uses Excel
-openpyxl              # For Excel reading/writing
-shutil                # Part of standard lib; no need to include
+python-multipart       # for UploadFile / Form
+pandas
+openpyxl               # for Excel reading/writing
+osmnx                  # for OSM graph routing
+networkx
+folium
+geopandas              # OSMnx dependency
+shapely                # OSMnx dependency
+rtree                  # optional, for spatial queries
+matplotlib             # optional for OSMnx plotting
+requests               # OSMnx fetches data online
+numpy
