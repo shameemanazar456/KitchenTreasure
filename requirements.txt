@@ -1,3 +1,7 @@
 scikit-learn
 fastapi
 uvicorn[standard]
+python-multipart      # Required for UploadFile / Form
+pandas                # If your route_logic uses Excel
+openpyxl              # For Excel reading/writing
+shutil                # Part of standard lib; no need to include
